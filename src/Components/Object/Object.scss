@@ -1,0 +1,12 @@
+.object{
+    &__edit {
+        display: inline-block;
+        margin-left: 20px;
+        cursor: pointer;
+      }
+      &__delete {
+        display: inline-block;
+        margin-left: 20px;
+        cursor: pointer;
+      }
+}

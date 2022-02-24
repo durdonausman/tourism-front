@@ -1,0 +1,92 @@
+.transport {
+    width: 80%;
+    padding: 15px;
+  
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+  
+    &-list {
+      height: 500px;
+      overflow-y: auto;
+      ::-webkit-scrollbar {
+        width: 5px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: #1f1d2b;
+      }
+      ::-webkit-scrollbar-track {
+        background-color: #ea7c69;
+      }
+    }
+  
+    &__delete {
+      display: inline-block;
+      margin-left: 20px;
+      cursor: pointer;
+    }
+  
+    &__add {
+      background-color: #ea7c69;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 600;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  }
+  
+  .table {
+    width: 100%;
+    &-head {
+      background-color: #fff;
+      color: #1f1d2b;
+      z-index: 3;
+      th {
+        border: 1px solid #ea7c69;
+        padding: 10px;
+        margin-right: 10px;
+      }
+    }
+  
+    &-body {
+      color: #ea7c69;
+      text-align: center;
+      margin-top: 10px;
+      td {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  
+  .status {
+    width: 40px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #fff;
+    cursor: pointer;
+    // border: 1px solid ;
+    position: relative;
+    &__item {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background-color: #1f1d2b;
+      // border: 1px solid ;
+      position: absolute;
+      top: 1px;
+      left: 2px;
+      transition: 0.5s;
+      &__click {
+        left: 20px;
+        background-color: #ea7c69;
+      }
+    }
+  }
+  

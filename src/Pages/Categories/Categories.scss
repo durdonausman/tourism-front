@@ -1,0 +1,52 @@
+.categories {
+  width: 80%;
+  padding: 15px;
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  &-select {
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: #fff;
+    border: 1px solid #ea7c69;
+    background-color: #252836;
+  }
+  &-list {
+    height: 500px;
+    overflow-y: auto;
+    ::-webkit-scrollbar {
+      width: 5px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background-color: #1f1d2b;
+    }
+    ::-webkit-scrollbar-track {
+      background-color: #ea7c69;
+    }
+  }
+  &__edit {
+    display: inline-block;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+  &__delete {
+    display: inline-block;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+  &__add {
+    background-color: #ea7c69;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+}

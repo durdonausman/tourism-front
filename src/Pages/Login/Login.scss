@@ -1,0 +1,76 @@
+.login {
+  height: 100vh;
+  background-color: #252836;
+  color: #ea7c69;
+
+  &__title {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
+.form {
+  display: block;
+  max-width: 400px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  .input {
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #ea7c69;
+
+    border: 1px solid #ea7c69;
+    outline: none;
+
+    &::placeholder {
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+
+  .file {
+    display: none;
+  }
+
+  .label {
+    display: block;
+    color: #ea7c69;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 1px solid #ea7c69;
+    border-radius: 20px;
+    margin-top: 10px;
+    padding: 20px 10px;
+  }
+
+  .btn {
+    display: block;
+    border: 1px solid transparent;
+    background-color: #ea7c69;
+    border-radius: 8px;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+
+    transition: all 0.4s;
+
+    &:hover {
+      background: transparent;
+      border: 1px solid #ea7c69;
+      color: #ea7c69;
+    }
+  }
+}
